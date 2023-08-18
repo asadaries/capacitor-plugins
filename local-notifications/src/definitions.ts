@@ -708,6 +708,7 @@ export interface LocalNotificationSchema {
    * @since 1.0.0
    */
   inboxList?: string[];
+  number?: number;
 }
 
 /**

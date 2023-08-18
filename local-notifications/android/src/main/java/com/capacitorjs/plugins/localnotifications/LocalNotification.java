@@ -41,6 +41,7 @@ public class LocalNotification {
     private LocalNotificationSchedule schedule;
     private String channelId;
     private String source;
+    private int number;
 
     public String getTitle() {
         return title;
@@ -202,6 +203,14 @@ public class LocalNotification {
     public void setChannelId(String channelId) {
         this.channelId = channelId;
     }
+
+    public int getNumber() {
+        return number;
+      }
+    
+      public void setNumber(int number) {
+        this.number = number;
+      }
 
     /**
      * Build list of the notifications from remote plugin call

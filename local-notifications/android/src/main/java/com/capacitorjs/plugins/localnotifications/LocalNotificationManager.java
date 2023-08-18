@@ -173,6 +173,9 @@ public class LocalNotificationManager {
             .setOngoing(localNotification.isOngoing())
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setGroupSummary(localNotification.isGroupSummary());
+            if(localNotification.getNumber()>0){
+                mBuilder.setNumber(localNotification.getNumber());
+              }
 
         if (localNotification.getLargeBody() != null) {
             // support multiline text
